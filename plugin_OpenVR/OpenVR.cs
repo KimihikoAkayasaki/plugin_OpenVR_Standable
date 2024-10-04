@@ -1,4 +1,4 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using System;
@@ -36,11 +36,11 @@ using Vanara.PInvoke;
 namespace plugin_OpenVR;
 
 [Export(typeof(IServiceEndpoint))]
-[ExportMetadata("Name", "SteamVR")]
-[ExportMetadata("Guid", "K2VRTEAM-AME2-APII-SNDP-SENDPTOPENVR")]
-[ExportMetadata("Publisher", "K2VR Team")]
-[ExportMetadata("Version", "1.0.0.2")]
-[ExportMetadata("Website", "https://github.com/KinectToVR/plugin_OpenVR")]
+[ExportMetadata("Name", "SteamVR (Standable support)")]
+[ExportMetadata("Guid", "K2VRTEAM-AME2-APII-SNDP-SENDPTOVRSTB")]
+[ExportMetadata("Publisher", "公彦赤屋先")]
+[ExportMetadata("Version", "1.0.0.1")]
+[ExportMetadata("Website", "https://github.com/KimihikoAkayasaki/plugin_OpenVR_Standable")]
 [ExportMetadata("DependencyInstaller", typeof(DriverInstaller))]
 [ExportMetadata("CoreSetupData", typeof(SetupData))]
 public class SteamVR : IServiceEndpoint
