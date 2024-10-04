@@ -67,7 +67,7 @@ void BodyTracker::update()
     {
         // If _active is false, then disconnect the tracker
         _pose.poseIsValid = _valid;
-        _pose.deviceIsConnected = _valid;
+        _pose.deviceIsConnected = _active; // && _valid;
 
         vr::VRServerDriverHost()->TrackedDevicePoseUpdated(_index, _pose, sizeof _pose);
     }
